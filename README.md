@@ -48,3 +48,25 @@ Fluid dynamics modeling has received extensive attention in the machine learning
 <p align="center" width="100%">
   <img src='figure/vis.png' width="100%">
 </p>
+
+
+## Prometheus benchmark download
+
+
+## Visualization
+
+## Citation
+
+If you are interested in our repository or our paper, please cite the following paper:
+
+```
+@inproceedings{wu2024prometheus,
+  title={Prometheus: Out-of-distribution Fluid Dynamics Modeling with Disentangled Graph ODE},
+  author={Wu, Hao and Wang, Huiyuan and Wang, Kun and Wang, Weiyan and Ye, Changan and Tao, Yangyu and Chen, Chong and Hua, Xian-Sheng and Luo, Xiao},
+  booktitle={Proceedings of the 41st International Conference on Machine Learning},
+  pages={PMLR 235},
+  year={2024},
+  organization={PMLR},
+  address={Vienna, Austria}
+}
+```
