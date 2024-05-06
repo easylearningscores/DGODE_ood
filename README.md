@@ -42,3 +42,7 @@ Fluid dynamics modeling has received extensive attention in the machine learning
 <p align="center" width="100%">
   <img src='figure/gongkuang.png' width="100%">
 </p>
+
+<p align="center" width="100%">
+  <img src='figure/vis.png' width="100%">
+</p>
