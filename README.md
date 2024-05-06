@@ -55,6 +55,12 @@ Fluid dynamics modeling has received extensive attention in the machine learning
 
 ## Visualization
 
+<video src="figure/weather.mov" controls="controls">
+Your browser does not support the video tag.
+</video>
+
+
+
 ## Citation
 
 If you are interested in our repository or our paper, please cite the following paper:
