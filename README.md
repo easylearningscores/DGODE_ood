@@ -72,7 +72,10 @@ pip install -r requirements.txt
 | Navier-Stokes | Predict future fluid velocity           | Regular Grid    | [[Google Cloud]](https://drive.google.com/drive/folders/1UnbQh2WWc6knEHbLn-ZaXrKUZhp7pjt-) |
 | WeathBench    | Weather forecasts                       | Regular Grid    | [[Google Cloud]](https://drive.google.com/drive/folders/1sPCg8nMuDa0bAWsHPwskKkPOzaVcBneD) |
 
-
+3. Run
+```python
+python main.py --data_path /Dataset/NavierStokes_V1e-5_N1200_T20.mat --num_epochs 100 --batch_size 20
+```
 ## Citation
 
 If you are interested in our repository or our paper, please cite the following paper:
