@@ -3,7 +3,7 @@
 </p>
 
 
-# Prometheus: Out-of-distribution Fluid Dynamics Modeling with Disentangled Graph ODE
+# Prometheus: Out-of-distribution Fluid Dynamics Modeling with Disentangled Graph ODE (ICML2024)
 
 
 <p align="left">
