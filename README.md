@@ -70,7 +70,7 @@ pip install -r requirements.txt
 | Dataset       | Task                                    | Geometry        | Link                                                         |
 | ------------- | --------------------------------------- | --------------- | ------------------------------------------------------------ |
 | Navier-Stokes | Predict future fluid velocity           | Regular Grid    | [[Google Cloud]](https://drive.google.com/drive/folders/1UnbQh2WWc6knEHbLn-ZaXrKUZhp7pjt-) |
-| WeathBench    | Weather forecasts                       | Regular Grid    | [[Google Cloud]]([https://drive.google.com/drive/folders/1UnbQh2WWc6knEHbLn-ZaXrKUZhp7pjt-](https://drive.google.com/drive/folders/1sPCg8nMuDa0bAWsHPwskKkPOzaVcBneD)-)) |
+| WeathBench    | Weather forecasts                       | Regular Grid    | [[Google Cloud]](https://drive.google.com/drive/folders/1sPCg8nMuDa0bAWsHPwskKkPOzaVcBneD) |
 
 
 ## Citation
