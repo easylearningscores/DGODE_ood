@@ -57,6 +57,20 @@ Fluid dynamics modeling has received extensive attention in the machine learning
 
 ![Weather](figure/weather.gif)
 
+## Get Started
+1. Install Python 3.8. For convenience, execute the following command.
+
+```bash
+pip install -r requirements.txt
+```
+
+2. Prepare Data. You can obtain experimental datasets from the following links.
+
+
+| Dataset       | Task                                    | Geometry        | Link                                                         |
+| ------------- | --------------------------------------- | --------------- | ------------------------------------------------------------ |
+| Navier-Stokes | Predict future fluid velocity           | Regular Grid    | [[Google Cloud]](https://drive.google.com/drive/folders/1UnbQh2WWc6knEHbLn-ZaXrKUZhp7pjt-) |
+| WeathBench    | Weather forecasts                       | Regular Grid    | [[Google Cloud]]([https://drive.google.com/drive/folders/1UnbQh2WWc6knEHbLn-ZaXrKUZhp7pjt-](https://drive.google.com/drive/folders/1sPCg8nMuDa0bAWsHPwskKkPOzaVcBneD)) |
 
 
 ## Citation
