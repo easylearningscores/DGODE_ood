@@ -54,17 +54,20 @@ class TemporalGNNModel(nn.Module):
         return spatial_node_features
 
 
-in_features = 1
-out_features = 1
-num_layers = 3
-num_nodes = 1024
-T_obs = 5
-batch_size = 2
 
-model = TemporalGNNModel(in_features, out_features, num_layers, num_nodes)
 
-# (batch_size, T_obs, num_nodes, in_features)
-node_features = torch.randn(batch_size, T_obs, num_nodes, in_features)
+if __name__ == "__main__":
+    in_features = 10
+    out_features = 10
+    num_layers = 3
+    num_nodes = 1024
+    T_obs = 5
+    batch_size = 2
 
-spatial_node_features = model(node_features)
-print(spatial_node_features.shape)  # (batch_size, num_nodes, out_features)
+    model = TemporalGNNModel(in_features, out_features, num_layers, num_nodes)
+
+    # (batch_size, T_obs, num_nodes, in_features)
+    node_features = torch.randn(batch_size, T_obs, num_nodes, in_features)
+
+    spatial_node_features = model(node_features)
+    print(spatial_node_features.shape)  # (batch_size, num_nodes, out_features)
