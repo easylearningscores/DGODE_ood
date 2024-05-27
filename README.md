@@ -76,6 +76,9 @@ pip install -r requirements.txt
 ```python
 python main.py --data_path /Dataset/NavierStokes_V1e-5_N1200_T20.mat --num_epochs 100 --batch_size 20
 ```
+
+4. About Loss function
+we also add rescaled different loss objectives.
 ## Citation
 
 If you are interested in our repository or our paper, please cite the following paper:
