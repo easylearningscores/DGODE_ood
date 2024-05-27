@@ -82,8 +82,8 @@ def train_model(model, train_loader, eval_loader, criterion, optimizer, device, 
         for inputs, targets in progress_bar:
             inputs, targets = inputs.to(device), targets.to(device)
             optimizer.zero_grad()
-            solver_outputs, K_he, class_feature, Node_representation, Environmental_representation = model(inputs)
-            loss = criterion(solver_outputs, targets)
+            solver_outputs, loss_vq, K_he, class_feature, Node_representation, Environmental_representation = model(inputs)
+            loss = criterion(solver_outputs, targets) + loss_vq
             loss.backward()
             optimizer.step()
 
