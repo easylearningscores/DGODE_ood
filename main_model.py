@@ -15,8 +15,8 @@ class DGODE(nn.Module):
     def __init__(self, shape_in, num_classes, batch_size=2):
         super(DGODE, self).__init__()
         T, C, H, W = shape_in
-        self.Frequency_Network = FourierNet(input_len=10*1, modes1=12, modes2=12, pred_len=10*1, width=20)
-        self.Temporal_GNN = Equivariant_Graph_Operator(in_node_nf=10*1, hidden_nf=32, out_node_nf=10*1, in_edge_nf=1)
+        self.Frequency_Network = FourierNet(input_len=T*C, modes1=12, modes2=12, pred_len=T*C, width=20)
+        self.Temporal_GNN = TemporalGNNModel(in_features=C, out_features=T*C, num_layers=1, num_nodes=H*W)
         self.vqvae = VectorQuantizerEMA(num_embeddings=128, embedding_dim=64, commitment_cost=0.99)
         self.classifier = nn.Linear(T*C*H*W, num_classes)
         self.skip_conneciton = ConvolutionalNetwork.skip_connection(shape_in=shape_in)
@@ -47,24 +47,12 @@ class DGODE(nn.Module):
         skip_feature = self.skip_conneciton(inputs)
         h_f = self.Frequency_Network(inputs)
         
-        batch_size = self.batch_size
-        n_nodes = 1024 
-        n_feat = 10
-        x_dim = 2
-        input_graph = inputs.view(B, T*C, H*W)
-        input_graph = input_graph.permute(0,2,1).reshape(-1, n_feat)
-        # h = torch.ones(batch_size * n_nodes, n_feat)
-        #print('input_graph shape', input_graph.shape) # h shape torch.Size([1024, 10])
-        x = torch.ones(batch_size * n_nodes, x_dim)
-        edges, edge_attr = get_edges_batch(n_nodes, batch_size)
-        h_s, _ = self.Temporal_GNN(input_graph, x, edges, edge_attr)
-        h_s = h_s.reshape(batch_size, n_nodes, -1)
-
+        node_features = inputs.reshape(B,T,C,H*W).permute(0,1,3,2)
+        h_s = self.Temporal_GNN(node_features)
         features_extraction = h_f + h_s
+        print(features_extraction.shape)
         Node_representation = features_extraction
         f_class = Node_representation
-        # print("Node_representation shape:", Node_representation.shape)
-
 
         Environmental_representation = features_extraction
 
