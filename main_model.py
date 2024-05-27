@@ -72,7 +72,7 @@ class DGODE(nn.Module):
         # classification
         f_class = f_class.view(B, -1)
         class_feature = self.classifier(f_class)
-        return solver_outputs, K_he, class_feature, Node_representation, Environmental_representation
+        return solver_outputs, loss_vq, K_he, class_feature, Node_representation, Environmental_representation
 
 
 
@@ -83,7 +83,7 @@ if __name__ == "__main__":
     model = DGODE(shape_in=(10, 1, 32, 32), num_classes=8, batch_size=2)
     optimizer = optim.Adam(model.parameters(), lr=0.001)
     inputs = torch.rand(2, 10, 1, 32, 32)    
-    solver_outputs, K_he, class_feature, Node_representation, Environmental_representation = model(inputs)
+    solver_outputs, loss_vq, K_he, class_feature, Node_representation, Environmental_representation = model(inputs)
     print(solver_outputs.shape, class_feature.shape)        
     # regression_loss = mse_loss_fn(solver_outputs, Physics_filed_labels)
     # #classification_loss = classification_loss_fn(class_feature, class_target)
