@@ -52,8 +52,8 @@ def evaluate_model(model, eval_loader, criterion, device):
     with torch.no_grad():
         for inputs, targets in eval_loader:
             inputs, targets = inputs.to(device), targets.to(device)
-            outputs, _ = model(inputs)
-            loss = criterion(outputs, targets)
+            outputs, loss_vq, K_he, class_feature, Node_representation, Environmental_representation = model(inputs)
+            loss = criterion(outputs, targets) + loss_vq
             total_loss += loss.item() * inputs.size(0)
             total_samples += inputs.size(0)
     return total_loss / total_samples
@@ -65,8 +65,8 @@ def test_model(model, test_loader, criterion, device):
     with torch.no_grad():
         for inputs, targets in test_loader:
             inputs, targets = inputs.to(device), targets.to(device)
-            outputs, _ = model(inputs)
-            loss = criterion(outputs, targets)
+            outputs, loss_vq, K_he, class_feature, Node_representation, Environmental_representation = model(inputs)
+            loss = criterion(outputs, targets) + loss_vq
             total_loss += loss.item() * inputs.size(0)
             total_samples += inputs.size(0)
     return total_loss / total_samples
