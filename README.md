@@ -71,6 +71,8 @@ pip install -r requirements.txt
 | ------------- | --------------------------------------- | --------------- | ------------------------------------------------------------ |
 | Navier-Stokes | Predict future fluid velocity           | Regular Grid    | [[Google Cloud]](https://drive.google.com/drive/folders/1UnbQh2WWc6knEHbLn-ZaXrKUZhp7pjt-) |
 | WeathBench    | Weather forecasts                       | Regular Grid    | [[Google Cloud]](https://drive.google.com/drive/folders/1sPCg8nMuDa0bAWsHPwskKkPOzaVcBneD) |
+| Prometheus    | Combustion dynamics prediction          | Irregular grid  | [[Google Cloud]](https://drive.google.com/drive/u/0/folders/1cUmI0-SZcYvGUOGdZg14mde509iW_Yrt) |
+
 
 3. Run
 ```python
