@@ -1,5 +1,5 @@
 <p align="center" width="100%">
-  <img src='figure/Prometues.png' width="50%">
+  <img src='figures/Prometues.png' width="50%">
 </p>
 
 
@@ -42,11 +42,11 @@ Fluid dynamics modeling has received extensive attention in the machine learning
 **a. Tunnel Design:** A tunnel that is 100 m long, 6 m wide, and 6 m high, with a focus on 2D flow data at y=3 m. Sensors are used to monitor temperature and visibility. **b. Industrial Park Tanks:** Features three tanks, each with a diameter of 20 m and varying heights of 10 m, 20 m, and an adjacent building measuring 55 m in length, 40 m in width, and 30 m in height. **c. Tunnel Visualization:** Displays the distribution of temperature and visibility within the tunnel. **d. Fire Dynamics:** Visualizes both the velocity and temperature in a pool fire to analyze its dynamics.
 
 <p align="center" width="100%">
-  <img src='figure/gongkuang.png' width="100%">
+  <img src='figures/gongkuang.png' width="100%">
 </p>
 
 <p align="center" width="100%">
-  <img src='figure/vis.png' width="100%">
+  <img src='figures/vis.png' width="100%">
 </p>
 
 
