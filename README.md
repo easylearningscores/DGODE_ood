@@ -33,7 +33,7 @@
 
 
 <p align="center" width="100%">
-  <img src='figures/ICML_poster.png' width="50%">
+  <img src='figures/ICML_poster.png' width="100%">
 </p>
 
 ## Abstract
