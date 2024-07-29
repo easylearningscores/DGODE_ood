@@ -24,12 +24,12 @@
 </p>
 
 
-[📘Documentation](https://openstl.readthedocs.io/en/latest/) |
-[🛠️Installation](docs/en/install.md) |
-[🚀Model Zoo](docs/en/model_zoos/video_benchmarks.md) |
-[🤗Huggingface](https://huggingface.co/OpenSTL) |
-[👀Visualization](docs/en/visualization/video_visualization.md) |
-[🆕News](docs/en/changelog.md)
+[📘Documentation](https://icml.cc/virtual/2024/poster/34364) |
+[🛠️Installation]([docs/en/install.md](https://icml.cc/virtual/2024/poster/34364)) |
+[🚀Model Zoo]([docs/en/model_zoos/video_benchmarks.md](https://icml.cc/virtual/2024/poster/34364)) |
+[🤗Huggingface](https://huggingface.co/datasets/easylearning/Prometheus) |
+[👀Visualization]([docs/en/visualization/video_visualization.md](https://icml.cc/virtual/2024/poster/34364)) |
+[🆕News]([docs/en/changelog.md](https://icml.cc/virtual/2024/poster/34364))
 
 
 <p align="center" width="100%">
